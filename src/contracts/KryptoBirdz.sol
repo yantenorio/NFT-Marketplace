@@ -4,10 +4,10 @@ pragma solidity ^0.8.0;
 contract KryptoBird {
     
     string public name;
-    string public symbol;    
+    string public Symbol;    
 
     constructor () {
         name = 'KryptoBird';
-        symbol = 'KBirdz';
+        Symbol = 'KBirdz';
     }
 }
