@@ -1,13 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract Hurt {
-    
-    string public name;
-    string public Symbol;    
+import './ERC721Connector.sol';
 
-    constructor () {
-        name = 'Hurt';
-        Symbol = 'Broken';
-    }
+contract Hurt is ERC721Connector {  
+
+    constructor () ERC721Connector('Hurt', 'Broken') {}
 }
